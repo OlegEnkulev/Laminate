@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Laminate"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontFamily="Century Gothic" FontSize="12">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="400"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Войти в аккаунт" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="UserBTN" Background="White" FontSize="20" FontWeight="Bold"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Margin="5">
+                <Image Source="/Resources/1.jpg" Height="150"/>
+                <Label Content="JumpAir Basic" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <Label Content="Толщина 18мм" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                <Label Content="Высокая износостойкость" HorizontalAlignment="Center"/>
+                <Label Content="Простота конструкции" HorizontalAlignment="Center"/>
+                <Label Content="Залы площадью не более 200м2" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Margin="5">
+                <Image Source="/Resources/2.jpg" Height="150"/>
+                <Label Content="Smart-Fit" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <Label Content="Толщина 28мм" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                <Label Content="Готовая система" HorizontalAlignment="Center"/>
+                <Label Content="Для общего назначения" HorizontalAlignment="Center"/>
+                <Label Content="Залы площадью не более 500м2" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
